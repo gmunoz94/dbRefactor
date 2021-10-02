@@ -36,7 +36,6 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-<<<<<<< HEAD
     <Router>
       <>
         <Navbar />
@@ -47,16 +46,6 @@ function App() {
         </Switch>
       </>
     </Router>
-=======
-      <Router>
-          <Navbar />
-          <Switch>
-            <Route exact path='/' component={SearchBooks} />
-            <Route exact path='/saved' component={SavedBooks} />
-            <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
-          </Switch>
-      </Router>
->>>>>>> 03aef35655357867bbcb020d7d431b17e325654f
     </ApolloProvider>
   );
 }
